@@ -5,15 +5,14 @@ html(lang='en')
     meta(name='viewport', content='width=device-width')
     title= title
     block css
-      link(rel='stylesheet', href='/css/vendor/bootstrap/css/bootstrap.min.css')
-      link(ref='stylesheet', href='/css/flat-ui.min.css')
+    link(rel='stylesheet', href='/css/vendor/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/flat-ui.css')
       
     block js
-    <!--[if lt IE 9]>
-      script(src='/js/vendor/html5shiv.js')
-      script(src='/js/vendor/respond.min.js')
-    <![endif]-->
+
   body
     block content
-    block js2
+
+  script('/js/vendor/jquery.min.js')
+  script('/js/flat-ui.min.js')
     
