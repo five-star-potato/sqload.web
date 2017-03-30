@@ -49,12 +49,12 @@
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <h1>SQLOAD is a free data generation tool for SQL Server</h1>
+                    <h1>SQLOAD</h1> <h4>is a free data generation tool for SQL Server</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-3">
-                    <a href="https://github.com/designmodo/Flat-UI/archive/master.zip" class="btn btn-primary btn-lg btn-block">Download</a>            
+                    <a href="https://github.com/five-star-potato/sqload/releases/download/1.1.1/sqload-win32-x64.zip" class="btn btn-primary btn-lg btn-block">Download</a>            
                 </div>
             </div>
 
@@ -71,29 +71,6 @@ String.prototype.repeat = function (num) {
 };
 
 (function ($) {
-
-  // Add segments to a slider
-  $.fn.addSliderSegments = function () {
-    return this.each(function () {
-      var $this = $(this),
-          option = $this.slider('option'),
-          amount = (option.max - option.min)/option.step,
-          orientation = option.orientation;
-      if ( 'vertical' === orientation ) {
-        var output = '', i;
-        console.log(amount);
-        for (i = 1; i <= amount - 1; i++) {
-            output += '<div class="ui-slider-segment" style="top:' + 100 / amount * i + '%;"></div>';
-        }
-        $this.prepend(output);
-      } else {
-        var segmentGap = 100 / (amount) + '%';
-        var segment = '<div class="ui-slider-segment" style="margin-left: ' + segmentGap + ';"></div>';
-        $this.prepend(segment.repeat(amount - 1));
-      }
-    });
-  };
-
   $(function () {
     // Focus state for append/prepend inputs
     $('.input-group').on('focus', '.form-control', function () {
